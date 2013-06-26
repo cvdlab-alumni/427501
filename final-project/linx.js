@@ -531,7 +531,7 @@ var final_model = STRUCT([final_model1,final_model2,cyl,support_result,cubo_resu
 DRAW(final_model)
 
 
-function Fly() {
+function Animate() {
   var message = 'Do you want to activate the movement of the Marco Barbieri model?'
 
   var choice = confirm(message)
@@ -544,4 +544,4 @@ function Fly() {
 
 }
 
-Fly()
+Animate()
