@@ -1,1 +1,1 @@
-The site project is here https://marley1990.github.io/WEB-VISUAL
+The site project is here https://marley1990.github.io
