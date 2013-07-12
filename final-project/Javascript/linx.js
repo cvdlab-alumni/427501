@@ -546,7 +546,12 @@ var pc_point = [[0,0,0],[0,0,1.3],[0,0.01,1.3],[0,.79,1.3],[0,0.8,1.3],[0,0.8,0]
 
 var pc_end = BEZIER(S0)([[0,0,0],[0,0.8,0]])
 
+<<<<<<< HEAD:final-project/Javascript/linx.js
 var pc_nubs = NUBS(S0)(1)([0,0,1,2,3,4,5,6,6])(pc_point)
+=======
+function Animate() {
+  var message = 'Do you want to activate the movement of the Marco Barbieri model?'
+>>>>>>> 34470769ab67163f19b4ee8fb1da68e2404a9ff0:final-project/linx.js
 
 var pc_point1 = [[-0.05,0,0],[-0.05,0,1.4],[-0.05,0.01,1.4],[-0.05,.79,1.4],[-0.05,0.8,1.4],[-0.05,0.8,0],[-0.05,0.8,0]]
 
@@ -587,6 +592,7 @@ var torus = function (R, r) {
   }
 }
 
+<<<<<<< HEAD:final-project/Javascript/linx.js
 var domainWheel = DOMAIN([[0,2*PI],[0,1]])([20,20])
 
 var wheel1 = MAP(torus(0.08,0.05))(DOMAIN([[0,2*PI],[0,2*PI]])([20,20]))
@@ -633,3 +639,18 @@ var final_model = STRUCT([final_model1,final_model2,cyl,support_result,cubo_resu
 DRAW(final_model)
 
 
+function Animate() {
+  var message = 'Do you want to activate the movement of the linx model?'
+
+  var choice = confirm(message)
+
+  if (choice == true) {
+    setInterval(function () {
+    final_model.rotate([0,1], PI/45)/*.rotate([1,2],PI/45).rotate([0,2],PI/45)*/;
+    }, 10);
+  }
+  
+
+}
+
+Animate()
